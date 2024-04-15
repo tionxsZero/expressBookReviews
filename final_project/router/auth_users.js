@@ -66,7 +66,7 @@ regd_users.put("/auth/review/:isbn", (req, res) => {
                 } else {
                     books[isbn].reviews[reviewer] = review;
                 }
-                res.status(200).send({message: "Review added succesfully", books});
+                res.status(200).send({message: "Review added succesfully"});
             } else {
                 res.status(404).send({message: "Book not found"});
             }
